@@ -7,3 +7,43 @@
 body {
     font-family: 'PT Sans', sans-serif;
 }
+
+/* COMMON */
+.mobile-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-color: #0084fd;
+    height: 70px;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.main-menu {
+    display: none;
+}
+
+
+
+/**************
+    DESKTOP
+**************/
+@media screen and (min-width: 992px) {
+    .main-menu {
+        display: block;
+    }
+    .burger-button {
+        display: none;
+    }
+}
