@@ -17,6 +17,20 @@ body {
     max-width: 1170px;
     margin: 0 auto;
 }
+.container-medium {
+    width: 100%;
+}
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+img {
+    width: 100%;
+}
+/* Color */
+.bkg-violet {
+    background-color: #9792e4;
+}
 
 /* HEADER */
 header {
@@ -34,16 +48,77 @@ nav {
     display: none;
 }
 
+/* MAIN */
+/* Section Services */
+.service-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-col {
+    padding-bottom: 2rem;
+    display: flex;
+}
+.service-card {
+    background-color: #b5ddff;
+    padding: 1rem;
+}
+/* Section Strategic */
+.strategic-row {
+    width: 100%;
+}
+.strategic-col {
 
+    /* TEST */
+    background-color: lightblue;
+}
+
+.strategic-col:first-child {
+    padding-bottom: 1rem;
+}
+
+
+
+/**************
+    TABLET
+**************/
+@media screen and (min-width: 768px) {
+    /* Section Service */
+    .service-row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    .service-col {
+        width: calc(100% / 3);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .service-col:first-child {
+        width: calc( (100% / 3) * 2 );
+    }  
+}
 
 /**************
     DESKTOP
 **************/
 @media screen and (min-width: 992px) {
+    /* Header */
     .main-menu {
         display: block;
     }
     .burger-button {
         display: none;
+    }
+    /* Section Strategic */
+    .container-medium {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .strategic-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .strategic-col {
+        width: calc(50% - 1rem);
+        background-color: lightblue;
     }
 }
