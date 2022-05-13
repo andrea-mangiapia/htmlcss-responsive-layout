@@ -106,6 +106,10 @@ nav {
     padding-bottom: 2rem;
 }
 
+/* Section Cta */
+.cta-container {
+    width: 100%;
+}
 
 
 
@@ -163,6 +167,12 @@ nav {
     .au-small-col {
         width: 35%;
     }
+
+    /* Section Cta */
+    .cta-container {
+        max-width: 600px;
+        margin: 0 auto;
+}
 
 }
 
