@@ -24,9 +24,15 @@ section {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+h2 {
+    padding: 1rem;
+    font-size: 2.5rem;
+}
 img {
     width: 100%;
+    display: block;
 }
+
 /* Color */
 .violet {
     background-color: #9792e4;
@@ -36,6 +42,12 @@ img {
 }
 .c-white {
     color: white;
+}
+.c-blue {
+    color: #0084fd;
+}
+.c-violet {
+    color: #9792e4;
 }
 
 /*** HEADER ***/
@@ -70,35 +82,132 @@ nav {
 }
 .service-card {
     background-color: #b5ddff;
-    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
 }
+.card-one-col {
+    padding: 2rem;
+}
+.card-two-col {
+    padding: 0px 2rem;
+}
+.icon-large {
+    font-size: 80px;
+}
+.service-content {
+    text-align: left;
+}
+.service-card h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+.service-card p {
+    padding: 1rem 0;
+}
+.service-img {
+    align-self: flex-end;
+}
+.cta a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+.cta-store a {
+    background-color: #0084fd;
+    padding: 8px 60px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+}
+
 /* Section Strategic */
 .strategic-row {
     width: 100%;
 }
 .strategic-col {
-
-    /* TEST */
-    background-color: lightblue;
+    color: white;
 }
 .strategic-col:first-child {
     padding-bottom: 1rem;
 }
+.strategic-col:f {
+    padding-bottom: 1rem;
+}
+.strategic-content h2 {
+    padding-top: 100px;
+    padding-bottom: 2rem;
+}
+.strategic-card {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 40px;
+    text-align: center;
+}
+.strategic-card h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+.strategic-card img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+.circle-icon {
+    display: block;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 2rem auto 0 auto;
+}
+
+
 /* Section Testimonials */
+.testimonial-header {
+    text-align: center;
+}
+.title-testimonial {
+    text-transform: uppercase;
+}
 .testimonial-row {
     padding: 1rem;
     margin: 2rem 0;
+    border-radius: 30px;
 }
 .testimonial-img-col {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.square-img-box {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.square-img-box img  {
+    height: 100%;
+    object-fit: cover;
 
-    /* TEST */
-    background-color: lightpink;
 }
 .testimonial-content-col {
     padding-top: 1rem;
-
-    /* TEST */
-    background-color: azure;
+    color: white;
+    text-align: center;
+}
+.testimonial-content-col p{
+    padding-bottom: 1rem;
+}
+.testimonial-autor {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* Section Benefits */
@@ -121,8 +230,6 @@ footer {
     padding: 3rem 2rem;
 }
 
-
-
 /**************
     TABLET
 **************/
@@ -141,18 +248,24 @@ footer {
     .service-col:first-child {
         width: calc( (100% / 3) * 2 );
     }
+    .service-img img {
+        width: 250px;
+    }
 
     /* Section Testimonials */
     .testimonial-row {
         display: flex;
     }
     .testimonial-img-col {
-        width: 25%;
+        width: 150px;
     }
     .testimonial-content-col {
-        width: 75%;
+        width: calc(100% - 150px);
         padding-top: 2rem;
         padding-left: 2rem;
+        display: inline-block;
+        align-items: center;
+        text-align: left;
     }
 
     /* Section Benefits */
@@ -226,6 +339,11 @@ footer {
     }
 
     /*** MAIN ***/
+    /* Section Service */
+    .service-img {
+        width: 100%;
+    }
+
     /* Section Strategic */
     .container-medium {
         max-width: 850px;
@@ -237,8 +355,21 @@ footer {
     }
     .strategic-col {
         width: calc(50% - 1rem);
-        background-color: lightblue;
+        display: flex;
     }
+    .card-two-col {
+        display: flex;
+    }
+    .strategic-card-flex {
+        display: inline-block; 
+        align-self: flex-end; 
+    }
+
+    /* Section Testimonial */
+    .testimonial-header h2 {
+        font-size: 3rem;
+    }
+    
 
     /* Section Benefits */
     .benefit-col {
