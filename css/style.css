@@ -101,6 +101,12 @@ nav {
     padding: 2rem;
 }
 
+/* Section About us */
+.au-wide-col {
+    padding-bottom: 2rem;
+}
+
+
 
 
 /**************
@@ -146,7 +152,18 @@ nav {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+
+    /* Section About us */
+    .about-us-row {
+        display: flex;
+    }
+    .au-wide-col {
+        width: 65%;
+    }
+    .au-small-col {
+        width: 35%;
+    }
+
 }
 
 /**************
@@ -177,5 +194,12 @@ nav {
     /* Section Benefits */
     .benefit-col {
         width: calc(100% / 3);
+    }
+    /* Section About us */
+    .au-wide-col {
+        width: 75%;
+    }
+    .au-small-col {
+        width: 25%;
     }
 }
