@@ -31,8 +31,14 @@ img {
 .violet {
     background-color: #9792e4;
 }
+.grey {
+    background-color: #333333;
+}
+.c-white {
+    color: white;
+}
 
-/* HEADER */
+/*** HEADER ***/
 header {
     background-color: #0084fd;
     height: 70px;
@@ -48,7 +54,7 @@ nav {
     display: none;
 }
 
-/* MAIN */
+/*** MAIN ***/
 /* Section Services */
 .service-row {
     display: flex;
@@ -106,10 +112,9 @@ nav {
     padding-bottom: 2rem;
 }
 
-/* Section Cta */
-.cta-container {
-    width: 100%;
-    color: white;
+/*** FOOTER ***/
+footer {
+    padding: 3rem 2rem;
 }
 
 
@@ -118,6 +123,7 @@ nav {
     TABLET
 **************/
 @media screen and (min-width: 768px) {
+    /*** MAIN ***/
     /* Section Service */
     .service-row {
         margin-left: -1rem;
@@ -172,8 +178,12 @@ nav {
     /* Section Cta */
     .cta-container {
         max-width: 600px;
-        margin: 0 auto;
-}
+    }
+
+    /*** FOOTER ***/
+    .footer-container {
+        max-width: 500px;
+    }
 
 }
 
@@ -181,13 +191,14 @@ nav {
     DESKTOP
 **************/
 @media screen and (min-width: 992px) {
-    /* Header */
+    /*** HEADER ***/
     .main-menu {
         display: block;
     }
     .burger-button {
         display: none;
     }
+    /*** MAIN ***/
     /* Section Strategic */
     .container-medium {
         max-width: 850px;
