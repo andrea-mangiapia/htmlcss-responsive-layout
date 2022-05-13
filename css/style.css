@@ -42,7 +42,6 @@ img {
 header {
     background-color: #0084fd;
     height: 70px;
-    color: white;
 }
 nav {
     display: flex;
@@ -50,6 +49,11 @@ nav {
     align-items: center;
     height: 100%;
 }
+/* Burger Button */
+.burger-button {
+    font-size: 1.5rem;
+}
+/* Main Menu */
 .main-menu {
     display: none;
 }
@@ -192,12 +196,35 @@ footer {
 **************/
 @media screen and (min-width: 992px) {
     /*** HEADER ***/
-    .main-menu {
-        display: block;
-    }
+    /* Burger Button */
     .burger-button {
         display: none;
     }
+    /* Main Menu */
+    .main-menu {
+        display: block;
+    }
+    .main-menu ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+    .main-menu li {
+        padding-left: 2rem;
+    }
+    .main-menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+    }
+    li .cta-menu a { 
+        font-size: 1.2rem;
+        color: black;
+        padding: 7px 18px;
+        background-color: white;
+        border-radius: 30px;
+    }
+
     /*** MAIN ***/
     /* Section Strategic */
     .container-medium {
