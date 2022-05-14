@@ -24,6 +24,9 @@ section {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+.title-small {
+    text-transform: uppercase;
+}
 h2 {
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -171,9 +174,6 @@ nav {
 .testimonial-header {
     text-align: center;
 }
-.title-testimonial {
-    text-transform: uppercase;
-}
 .testimonial-row {
     padding: 1rem;
     margin: 2rem 0;
@@ -276,6 +276,30 @@ nav {
     background-color: #9792e4;
     font-size: 1rem;
     padding: 8px 20px;  
+}
+/* Section Cta */
+.cta-container {
+    text-align: center;
+}
+.cta-container a {
+    color: white;
+}
+.cta-container p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.cta-content {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fdc15f;
+    padding: 1.5rem 0;
+}
+.cta-button a {
+    background-color: white;
+    color: #9792e4;
+    margin: 2rem 0;
+    padding: 15px 60px;
+    border-radius: 40px;
 }
 
 /*** FOOTER ***/
