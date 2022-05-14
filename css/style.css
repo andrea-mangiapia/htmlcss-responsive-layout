@@ -32,6 +32,15 @@ img {
     width: 100%;
     display: block;
 }
+.cta a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 60px;
+}
 
 /* Color */
 .violet {
@@ -107,20 +116,11 @@ nav {
 .service-img {
     align-self: flex-end;
 }
-.cta a {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 1.2rem;
-    border-radius: 20px;
-    text-decoration: none;
-    color: white;
-}
 .cta-store a {
     background-color: #0084fd;
     padding: 8px 60px;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    
 }
 
 /* Section Strategic */
@@ -211,13 +211,34 @@ nav {
 }
 
 /* Section Benefits */
+.title-h2-desktop {
+    text-align: center;
+}
+.benefits-row {
+    padding-top: 2rem;
+}
 .benefit-col {
     padding-bottom: 2rem;
-
 }
 .benefit {
     background-color: white;
     padding: 2rem;
+    border-radius: 20px;
+}
+.benefit-number {
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+}
+.benefit-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    display: block;
+}
+.cta-benefit a {
+    margin: 1rem 0;
+    background-color: #9792e4;
 }
 
 /* Section About us */
@@ -339,6 +360,9 @@ footer {
     }
 
     /*** MAIN ***/
+    .title-h2-desktop {
+        font-size: 3rem;
+    }
     /* Section Service */
     .service-img {
         width: 100%;
@@ -364,12 +388,6 @@ footer {
         display: inline-block; 
         align-self: flex-end; 
     }
-
-    /* Section Testimonial */
-    .testimonial-header h2 {
-        font-size: 3rem;
-    }
-    
 
     /* Section Benefits */
     .benefit-col {
