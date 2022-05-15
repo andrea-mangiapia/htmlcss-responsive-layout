@@ -306,6 +306,16 @@ nav {
 footer {
     padding: 3rem 2rem;
 }
+.container.footer-container {
+    max-width: 370px;
+    text-align: center;
+}
+.footer-container p {
+    padding-bottom: 4rem;
+}
+.footer-container a {
+    color: #9792e4;
+}
 
 /**************
     TABLET
